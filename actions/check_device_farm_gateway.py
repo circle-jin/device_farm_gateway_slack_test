@@ -1,6 +1,7 @@
 import requests
 import json
 import os
+import traceback
 
 def check_device_farm_gateway_status(gateway_url):
     """Returns the current server status of the device_farm_gateway.
