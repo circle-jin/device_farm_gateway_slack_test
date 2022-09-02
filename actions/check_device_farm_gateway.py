@@ -9,11 +9,11 @@ def check_device_farm_gateway_status(gateway_url):
         gateway_url (string): url address of device_farm_gateway
     Returns:
         bool: Returns True when the server is open, False when the server is closed
-        int : Status_code of the device_farm_gateway
+        string : Status_code of the device_farm_gateway
     """
     try:
         device_farm_gateway = requests.get(gateway_url)
-        result = device_farm_gateway.status_code
+        result = str(device_farm_gateway.status_code)
         if result != 200:
             print("Device_Farm API Error : %s" %gateway_url)
             return False, result
