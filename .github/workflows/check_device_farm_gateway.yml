@@ -1,8 +1,11 @@
 name: check
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,6 +30,3 @@ jobs:
         run: python actions/test.py
         env:
           GATEWAY_URL: http://gateway.devicefarm.netspresso.ai/
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm start
