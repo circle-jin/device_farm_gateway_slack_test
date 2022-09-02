@@ -1,4 +1,4 @@
-name: check
+name: Check status of the device_farm_gateway server
 
 on:
   schedule:
