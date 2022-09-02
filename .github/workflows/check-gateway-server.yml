@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests os
+          pip install requests
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Noti
         run: python actions/check_device_farm_gateway.py
