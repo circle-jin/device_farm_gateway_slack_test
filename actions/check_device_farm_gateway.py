@@ -31,6 +31,7 @@ def notify_device_farm_gateway_shutdown_with_slack(slack_webhook_url):
     print("check")
     print(res.raise_for_status())
     if res.raise_for_status()!=None:
+        print("???")
         print(res.raise_for_status())
 
 def main():
