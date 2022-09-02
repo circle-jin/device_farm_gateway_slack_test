@@ -1,6 +1,10 @@
 name: Check status of the device_farm_gateway server
 
 on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
   schedule:
     - cron: "*/5 * * * *"
     
