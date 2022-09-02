@@ -44,7 +44,7 @@ def main():
         print("[NOTICE] device_farm_gateway is active!, STATUS_CODE : " + device_farm_gateway_status_code)
     else:
         msg_string = "*[NOTICE]* device_farm_gateway is *inactive*!\n :black_medium_small_square: STATUS_CODE : " + device_farm_gateway_status_code
-        notify_device_farm_gateway_shutdown_with_slack(GATEWAY_SLACK_WEBHOOK_URL, msg_string)
+        notify_device_farm_gateway_with_slack(GATEWAY_SLACK_WEBHOOK_URL, msg_string)
     
 if __name__ == '__main__':
     main()
