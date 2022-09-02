@@ -25,11 +25,12 @@ def check_device_farm_gateway_status(gateway_url):
 def notify_device_farm_gateway_shutdown_with_slack():
     """Notify Slack when the device_farm_gateway server is shut down
     """
-
+    print("tttt")
     webhook_url = "https://hooks.slack.com/services/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"
     msg_string = "[NOTICE] device_farm_gateway 서버가 종료되었습니다. "
     msg = {"text": f"{msg_string}"}
     requests.post(webhook_url, data=json.dumps(msg), headers={'Content-Type': 'application/json'})
+    print("END")
 
 def main():
     DEVICE_FARM_GATEWAY_URL = os.environ.get("DEVICE_FARM_GATEWAY_URL")
