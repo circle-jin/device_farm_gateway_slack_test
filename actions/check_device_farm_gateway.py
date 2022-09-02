@@ -14,7 +14,7 @@ def check_device_farm_gateway_status(gateway_url):
     try:
         device_farm_gateway = requests.get(gateway_url)
         result = str(device_farm_gateway.status_code)
-        if result != 200:
+        if result != "200":
             print("Device_Farm API Error : %s" %gateway_url)
             return False, result
         return True, result
