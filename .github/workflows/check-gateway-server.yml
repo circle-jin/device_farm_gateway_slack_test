@@ -30,4 +30,4 @@ jobs:
       - name: Noti
         run: python actions/check_device_farm_gateway.py
         env:
-          DEVICE_FARM_GATEWAY_URL: http://gateway.devicefarm.netspresso.ai
+          DEVICE_FARM_GATEWAY_URL: http://gateway.devicefarm.netspresso.ai/nodess
