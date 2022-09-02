@@ -31,5 +31,5 @@ jobs:
       - name: Noti
         run: python actions/check_device_farm_gateway.py
         env:
-          DEVICE_FARM_GATEWAY_URL: http://gateway.devicefarm.netspresso.ai/nodedss
+          DEVICE_FARM_GATEWAY_URL: http://gateway.devicefarm.netspresso.ai
           GATEWAY_SLACK_WEBHOOK_URL: ${{ secrets.GATEWAY_SLACK_WEBHOOK_URL }}
