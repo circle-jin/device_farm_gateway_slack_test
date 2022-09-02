@@ -25,7 +25,7 @@ def check_device_farm_gateway_status(gateway_url):
 def notify_device_farm_gateway_shutdown_with_slack(slack_webhook_url):
     """Notify Slack when the device_farm_gateway server is shut down
     """
-    msg_string = "[NOTICE] device_farm_gateway is inactive!"
+    msg_string = "*[NOTICE]* device_farm_gateway is *inactive*!"
     msg = {"text": f"{msg_string}"}
     res = requests.post(slack_webhook_url, data=json.dumps(msg), headers={'Content-Type': 'application/json'})
 
