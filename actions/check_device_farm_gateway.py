@@ -35,8 +35,8 @@ def main():
     DEVICE_FARM_GATEWAY_URL = os.environ.get("DEVICE_FARM_GATEWAY_URL")
     GATEWAY_SLACK_WEBHOOK_URL = os.environ.get("GATEWAY_SLACK_WEBHOOK_URL")
 
-    DEVICE_FARM_GATEWAY_URL = "http://10.169.1.100:8888/health"
-    GATEWAY_SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
+    # DEVICE_FARM_GATEWAY_URL = "http://10.169.1.100:8888/health"
+    # GATEWAY_SLACK_WEBHOOK_URL = "https://hooks.slack.com/services/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"
      
     device_farm_gateway_status_code = check_device_farm_gateway_status(DEVICE_FARM_GATEWAY_URL)
 
